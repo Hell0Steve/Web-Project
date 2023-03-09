@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html  >
+<head>
+
+<title>doglist</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+h1 { color: white; font-family: 'Open Sans', sans-serif; font-size: 34px; font-weight: 300; line-height: 40px; margin: 0 0 16px;font-weight: bold; }
+
+
+</style>
+
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" type="text/css" href = "/web_project/css/doglist.css">
+
+
+<body>
+
+
+<h1>Our dogs</h1>
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+	   <h1 style="text-align:center;">Alfie</h1>
+		<img src="/web_project/img/king.jpg" style=" width: 100%;" alt="Weight- 5 kg <br /> Estimate size- small <br /> 
+		Dogs breed- King Charles <br /> One of our baby dogs <br /> He will stay small <br />
+		Can be a house dog doesn’t need that much space and he is great with kids <br />
+		His character is more calm and silent, and doesn’t have any medical issues <br />" onmouseover="showText(this.alt)" onmouseout="hideText()">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+	   <h1 style="text-align:center;">Mickey</h1>
+	  	<img src="/web_project/img/jack.jpg" style=" width: 100%;" alt="Age- 1 year <br /> Weight- 10 kg <br /> Estimate size- small-medium <br />
+		 Dogs breed- Jack Russell <br /> 
+		Very energetic dog, Maiky need more space than other dogs he likes running and play<br /> 
+		He is great with kids, but can be great for singles as well that want a best friend to live with them.<br />" onmouseover="showText(this.alt)" onmouseout="hideText()">
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+		 </div>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+	  	<h1 style="text-align:center;">Scooby</h1>
+		<img src="/web_project/img/sh.jpg" style=" width: 100%;" alt="Age- 6 year <br / Weight- 7 kg <br />  Estimate size- small <br /> 
+			Dogs breed- Shih Tzu <br /> Our oldest dog, Skoby will sit next to 
+			you all day long and give you love <br /> He need his owners to be
+			at home and not at their job all day <br /> Calm and happy, looking
+			for someone to snuggle with at nights.<br />" onmouseover="showText(this.alt)" onmouseout="hideText()">
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+		 </div>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+	  	    <h1 style="text-align:center;">Snoopy</h1>
+	   <img src="/web_project/img/taha.jpg" style=" width: 100%;" alt="Weight- 5 kg <br /> Estimate size- small <br /> 
+		Dogs breed- King Charles <br /> One of our baby dogs <br /> He will stay small <br />
+		Can be a house dog doesn’t need that much space and he is great with kids <br />
+		His character is more calm and silent, and doesn’t have any medical issues <br />" onmouseover="showText(this.alt)" onmouseout="hideText()">
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+		 </div>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+
+		<div id="image-text"> </div>
+
+
+<div class=b1>
+  <a href="/web_project/includes/contact_detalis.html"> <button class="button-85" role="button">Click here to reach out</button></a>
+  </div>
+  
+  <div class="space"></div>
+  
+
+    <p id="dog1-description" class="dog-description" style="display: none; background-color: orange;">Weight- 5 kg
+Estimate size- small
+Dogs breed- King Charles
+One of our baby dogs 
+He will stay small
+Can be a house dog doesn’t need that much space and he is great with kids
+His character is more calm and silent, and doesn’t have any medical issues</p>
+    <p id="dog2-description" class="dog-description" style="display: none; background-color: orange;">Age- 4 month</p>
+    <p id="dog3-description" class="dog-description" style="display: none; background-color: orange;">This is a description of dog 3.</p>
+    <p id="dog4-description" class="dog-description" style="display: none; background-color: orange;">This is a description of dog 4.</p>
+  </div>
+
+  
+  
+  <script>function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+<script>function showDescription() {
+      var currentImg = document.getElementsByClassName("active")[0];
+      var currentImgId = currentImg.id;
+      var currentDescription = document.getElementById(currentImgId + "-description");
+      var allDescriptions = document.getElementsByClassName("dog-description");
+      for (var i = 0; i < allDescriptions.length; i++) {
+        allDescriptions[i].style.display = "none";
+      }
+      if (currentDescription.style.display === "none") {
+        currentDescription.style.display = "block";
+      } else {
+        currentDescription.style.display = "none";
+      }
+    }
+	
+  function showText(text) {
+    document.getElementById("image-text").innerHTML = text;
+  }
+  function hideText() {
+    document.getElementById("image-text").innerHTML = "";
+  }
+</script>
+
+
+  
+</body>
+
+</html>
+
+
